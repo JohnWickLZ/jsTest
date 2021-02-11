@@ -1,0 +1,21 @@
+<html>
+    <head></head>
+    <body>
+        <script>
+            let promise = new Promise(function(resolve, reject){
+                let isClean =  true;
+                if(isClean){
+                    resolve('clean')
+                }else{
+                    reject(' not clean')
+                }
+            })
+            console.dir('out')
+            promise.then((resolveStr)=>{
+                console.dir(resolveStr)
+            }).catch((rejectStr)=>{
+                console.dir(rejectStr)
+            })
+        </script>
+    </body>
+</html>
