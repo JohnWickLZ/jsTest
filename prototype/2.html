@@ -1,0 +1,35 @@
+<html>
+
+<head></head>
+
+<body>
+    <script src="../lib/jquery-3.5.1.min.js"></script>
+    <script>
+        //需要注释一个
+        // function A() {
+        //     this.a = 1;
+        //     this.getA = function () {
+        //         return this.a;
+        //     }
+        // }
+        // A.prototype.b = 33;
+        // Object.prototype.b = 22;
+        // var k = new A()
+        // console.dir(k.a)
+        // console.dir(k.b)
+        
+
+        function A() {
+            this.a = 2;
+            this.getA = function () {
+                return this.a;
+            }
+        } 
+        Object.prototype.b = 22;
+        var k = new A()
+        console.dir(k.a)
+        console.dir(k.b)
+    </script>
+</body>
+
+</html>
