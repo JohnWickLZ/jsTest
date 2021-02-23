@@ -1,0 +1,14 @@
+<html>
+    <head></head>
+    <body>
+        <script src="../lib/jquery-3.5.1.min.js"></script>
+        <script>
+            var student = new Object(); 
+            student.name = "Lanny"; 
+            student.age = "25"; 
+            student.location = "China"; 
+            var json = JSON.stringify(student, ['name', 'aaa']);
+            console.dir(json)
+        </script>
+    </body>
+</html>
