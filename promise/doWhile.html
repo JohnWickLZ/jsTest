@@ -1,15 +1,11 @@
 <html>
     <head></head>
     <body>
+        111
         <script src="../lib/jquery-3.5.1.min.js"></script>
         <script>
             let promise = new Promise(function(resolve, reject){
-                let isClean =  true;
-                if(isClean){
-                    resolve('clean')
-                }else{
-                    reject(' not clean')
-                }
+                resolve($.ajax('1.txt'))
             })
             console.dir('out')
             promise.then((resolveStr)=>{
@@ -18,5 +14,6 @@
                 console.dir(rejectStr)
             })
         </script>
+        222
     </body>
 </html>
