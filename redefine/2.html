@@ -5,25 +5,25 @@
 <body>
     <script src="../lib/jquery-3.5.1.min.js"></script>
     <script>
-        // function A(){
-        //     console.log(11);
-        // }
-        // let B = A;
-        // A = null;
-        // B()
-
-
-        function A(num){
-            if(num <=1){
-                return 1;
-            }else{
-                return num + A(num - 1)
-            }
+        function A(){
             console.log(11);
         }
         let B = A;
         A = null;
         B()
+
+
+        // function A(num){
+        //     if(num <=1){
+        //         return 1;
+        //     }else{
+        //         return num + A(num - 1)
+        //     }
+        //     console.log(11);
+        // }
+        // let B = A;
+        // A = null;
+        // B()
     </script>
 </body>
 
